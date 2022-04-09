@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;500;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Turret Road', cursive;
+}
+
+html,body{
+    overflow: hidden;
+}
+
+.desktop{
+    background-color: rgb(62, 61, 61);
+    background-image: url('https://img.freepik.com/free-vector/color-space-doodle_102902-2358.jpg?w=2000');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    padding: 12px;
+
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 50px;
+        margin-left: 10px;
+        align-items: center;
+        text-align: center;
+        
+        .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            opacity: 0.8;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            transition: .2s ease-in-out;
+            cursor: pointer ;
+
+            &:hover{
+                opacity: 1;
+                background-color: rgba(252, 251, 251, 0.413);
+                backdrop-filter: blur(10px);
+            }
+
+            img{
+                width: 40px;
+            }
+            h1{
+                font-size: 14px;
+                color: white;
+                font-weight: 100;
+            }           
+        }
+    }
+    .task-bar{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+            
+            .task-bar-icons{
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                img{
+                    width: 35px;
+                    padding: 5px;
+                    margin-left: 8px;                  
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.209);                        
+                    }
+                
+                }
+                input{
+                    width: 300px;
+                    height: 25px;
+                    padding-left: 5px;
+                    margin-left: 18px;
+                    border: none;
+                    outline: 0;
+                }
+                .linux-icon{
+                    margin-left: 18px;
+                }
+                
+                .task-bar-right{
+                    width: 100px;
+                    position: absolute;
+                    right: 35px;
+                    color: white;
+                    display: inline;
+                    
+                    img{
+                        width: 25px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    p{
+                        display: inline;
+                        position:fixed;
+                        margin: 0px 10px 0 10px;
+                        padding: 5px;
+                        cursor:default
+                        
+                    }
+                    p:hover{
+                        
+                        background-color: rgba(255, 255, 255, 0.209);
+                        
+                    }
+                }
+            
+
+
+                
+            }
+                
+        }
+        
+
+    }
+
+
