@@ -24,6 +24,66 @@ html,body{
     overflow: hidden;
     padding: 12px;
 
+    .window{
+        width: 80vw;
+        height: 80vh;
+        background-color: rgb(24, 24, 24);
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        z-index: 50;
+        
+        
+
+        .window-header{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            padding: 5px;
+
+            section{
+                display: flex;
+                gap: 4px;
+                
+                .button{
+
+                    width: 15px;
+                    height: 15px;
+                    background-color: bisque;
+                    display: block;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    &.close{
+                        background-color: rgb(167, 26, 26);
+                    }
+                    &.maximize{
+                        background-color: rgb(78, 167, 26);
+                    }
+                    &.minimize{
+                        background-color: rgb(167, 158, 26);
+                    }
+                }
+            }
+
+            h1{
+                color: rgba(204, 204, 204, 0.897);
+                font-size: 16px;
+                font-weight: 200;
+                text-align: center;
+                width: 100%;
+                
+            }
+        }
+
+        main{
+
+
+        }
+    }
+
+
+
+
 
     .icons{
         display: flex;
